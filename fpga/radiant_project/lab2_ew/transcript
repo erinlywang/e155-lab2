@@ -1,0 +1,691 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading project lab2_sim
+# Compile of mpx.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb_top -voptargs=+acc -L iCE40UP -Lf iCE40UP
+# vsim -gui work.tb_top -voptargs="+acc" -L iCE40UP -Lf iCE40UP 
+# Start time: 20:11:11 on Sep 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 23
+add wave -position insertpoint sim:/tb_top/*
+add wave -position insertpoint  \
+sim:/tb_top/dut/sel
+add wave -position insertpoint  \
+sim:/tb_top/dut/int_osc
+run -all
+#  seg = 1111111 (1000000 expected)
+# Causality operation skipped due to absence of debug database file
+# Compile of tb_top.sv failed with 1 errors.
+# Compile of tb_top.sv was successful.
+# Break key hit
+# Simulation stop requested.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+run -all
+#  seg = 1111111 (1000000 expected)
+# Break key hit
+# Simulation stop requested.
+restart -f
+
+restart -force
+restart -f -nowave
+run -all
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+#  seg = 1111111 (1000000 expected)
+# Break key hit
+# Simulation stop requested.
+run -all
+add wave -position insertpoint  \
+sim:/tb_top/clk
+add wave -position insertpoint  \
+sim:/tb_top/reset
+add wave -position insertpoint  \
+sim:/tb_top/s0
+add wave -position insertpoint  \
+sim:/tb_top/s1
+add wave -position insertpoint  \
+sim:/tb_top/led
+add wave -position insertpoint  \
+sim:/tb_top/ledexpected
+add wave -position insertpoint  \
+sim:/tb_top/seg
+add wave -position insertpoint  \
+sim:/tb_top/segexpected
+add wave -position insertpoint  \
+sim:/tb_top/trans0
+add wave -position insertpoint  \
+sim:/tb_top/trans1
+add wave -position insertpoint  \
+sim:/tb_top/sel
+# Compile of tb_top.sv failed with 2 errors.
+# Compile of tb_top.sv was successful.
+# Break key hit
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv line 50
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+run -all
+#  seg = 1111111 (1000000 expected)
+# Compile of mpx.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# 6 compiles, 0 failed with no errors.
+# Break key hit
+# Simulation stop requested.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+run -all
+#  seg = 1111111 (1000000 expected)
+# Break key hit
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv line 28
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+run -all
+#  seg = 1111111 (1000000 expected)
+# Break key hit
+# Simulation stop requested.
+add wave -position insertpoint sim:/tb_top/*
+# Compile of tb_top.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+run -all
+#  seg = 1111111 (1000000 expected)
+#  trans0 = 0 (0 expected)
+#  trans1 = 0 (1 expected)
+#  seg = 1000000 (1111001 expected)
+# Break key hit
+# Simulation stop requested.
+# Compile of tb_top.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+run -all
+#  seg = 1111111 (1000000 expected)
+#  trans0 = 0 (0 expected)
+#  trans1 = 0 (1 expected)
+#  seg = 1000000 (1111001 expected)
+# Break key hit
+# Simulation stop requested.
+add wave -position insertpoint  \
+sim:/tb_top/dut/int_osc
+# Compile of tb_top.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+run -all
+#  seg = 1111111 (1000000 expected)
+#  trans0 = 0 (0 expected)
+#  trans1 = 0 (1 expected)
+#  seg = 1000000 (1111001 expected)
+# Break key hit
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv line 60
+# Compile of tb_top.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+run  -all
+#  seg = 1111111 (1000000 expected)
+#  trans0 = 0 (0 expected)
+#  trans1 = 0 (1 expected)
+#  seg = 1000000 (1111001 expected)
+# Break key hit
+# Simulation stop requested.
+# Compile of mpx.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+run -all
+#  seg = 1111111 (1000000 expected)
+#  trans0 = 0 (0 expected)
+#  trans1 = 0 (1 expected)
+#  seg = 1000000 (1111001 expected)
+# Break key hit
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv line 28
+# Compile of mpx.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+run -all
+#  seg = 1111111 (1000000 expected)
+#  trans0 = 0 (0 expected)
+#  trans1 = 0 (1 expected)
+#  seg = 1000000 (1111001 expected)
+# Break key hit
+# Simulation stop requested.
+add wave -position insertpoint  \
+sim:/tb_top/dut/sel
+# Compile of tb_top.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+run -all
+#  seg = 1111111 (1000000 expected)
+#  trans0 = 0 (0 expected)
+#  trans1 = 0 (1 expected)
+#  seg = 1000000 (1111001 expected)
+# Break key hit
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv line 61
+add wave -position insertpoint  \
+sim:/tb_top/dut/mpx/counter
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+run -all
+#  seg = 1111111 (1000000 expected)
+#  trans0 = 0 (0 expected)
+#  trans1 = 0 (1 expected)
+#  seg = 1000000 (1111001 expected)
+# Break key hit
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv line 29
+# Compile of mpx.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(12).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/dut/int_osc'. 
+run -all
+#  seg = 1111111 (1000000 expected)
+#  trans0 = 0 (0 expected)
+#  trans1 = 0 (1 expected)
+#  seg = 1000000 (1111001 expected)
+# Break key hit
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv line 62
+# Compile of mpx.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv failed with 1 errors.
+# 6 compiles, 1 failed with 1 error.
+# Compile of mpx.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 22:35:59 on Sep 08,2025, Elapsed time: 2:24:48
+# Errors: 0, Warnings: 3
+# Compile of mpx.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc -L iCE40UP -Lf iCE40UP work.tb_mpx
+# vsim -gui -voptargs="+acc" -L iCE40UP -Lf iCE40UP work.tb_mpx 
+# Start time: 22:36:20 on Sep 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_mpx(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's0'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's1'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'seg'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv(20): [TFMPC] - Missing connection for port 'trans0'.
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv(20): [TFMPC] - Missing connection for port 'trans1'.
+add wave -position insertpoint sim:/tb_mpx/*
+run -all
+#  sel = z (0 expected)
+#  trans0 = x (0 expected)
+#  sel = z (1 expected)
+#  trans0 = x (1 expected)
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 22:39:50 on Sep 08,2025, Elapsed time: 0:03:30
+# Errors: 0, Warnings: 10
+# Compile of mpx.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc -L iCE40UP -Lf iCE40UP work.tb_mpx
+# vsim -gui -voptargs="+acc" -L iCE40UP -Lf iCE40UP work.tb_mpx 
+# Start time: 22:40:16 on Sep 08,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.tb_mpx(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's0'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's1'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'seg'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv(20): [TFMPC] - Missing connection for port 'trans0'.
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv(20): [TFMPC] - Missing connection for port 'trans1'.
+add wave -position insertpoint sim:/tb_mpx/dut/mpx/*
+run 100
+run 2000000
+#  sel = z (0 expected)
+#  trans0 = x (0 expected)
+add wave -position insertpoint sim:/tb_mpx/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_mpx(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's0'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's1'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'seg'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mpx/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv Line: 20
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv(20): [TFMPC] - Missing connection for port 'trans0'.
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv(20): [TFMPC] - Missing connection for port 'trans1'.
+run 2000000
+#  sel = z (0 expected)
+#  trans0 = x (0 expected)
+# Compile of tb_mpx.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_mpx(fast)
+# Loading work.mpx(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_mpx/dut/mpx/clk'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_mpx/dut/mpx/reset'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_mpx/dut/mpx/select'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_mpx/dut/mpx/trans0'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_mpx/dut/mpx/trans1'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_mpx/dut/mpx/counter'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_mpx/dut/mpx/counter_output'. 
+run 2000000
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_mpx(fast)
+# Loading work.mpx(fast)
+run -all
+#  sel = 0 (1 expected)
+#  trans0 = 0 (1 expected)
+#  trans1 = 1 (0 expected)
+# Break key hit
+# Break in Module tb_mpx at C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv line 24
+add wave -position insertpoint  \
+sim:/tb_mpx/dut/counter
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_mpx(fast)
+# Loading work.mpx(fast)
+run 1000
+# Compile of tb_mpx.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_mpx(fast)
+# Loading work.mpx(fast)
+run 1000
+# Compile of tb_mpx.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_mpx(fast)
+# Loading work.mpx(fast)
+run 1000
+run 200000
+run 2000000
+quit -sim
+# End time: 22:59:35 on Sep 08,2025, Elapsed time: 0:19:19
+# Errors: 0, Warnings: 2
+# Compile of tb_top.sv was successful.
+vsim -gui -voptargs=+acc -L iCE40UP -Lf iCE40UP work.tb_top
+# vsim -gui -voptargs="+acc" -L iCE40UP -Lf iCE40UP work.tb_top 
+# Start time: 23:00:34 on Sep 08,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (6) for port 'led'. The port definition is at: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv Line: 24
+add wave -position insertpoint sim:/tb_top/*
+add wave -position insertpoint  \
+sim:/tb_top/dut/mpx/counter
+run 1000
+quit -sim
+# End time: 23:02:02 on Sep 08,2025, Elapsed time: 0:01:28
+# Errors: 0, Warnings: 4
+vsim -gui -voptargs=+acc -L iCE40UP -Lf iCE40UP work.tb_sevseg
+# vsim -gui -voptargs="+acc" -L iCE40UP -Lf iCE40UP work.tb_sevseg 
+# Start time: 23:02:18 on Sep 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error: C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv(20): Module 'sevensegment' is not defined.
+#  For instance 'dut' at path 'tb_sevseg'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 23:02:19 on Sep 08,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of tb_sevseg.sv was successful.
+vsim -gui -voptargs=+acc -L iCE40UP -Lf iCE40UP work.tb_sevseg
+# vsim -gui -voptargs="+acc" -L iCE40UP -Lf iCE40UP work.tb_sevseg 
+# Start time: 23:02:59 on Sep 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_sevseg(fast)
+# Loading work.sevseg(fast)
+add wave -position insertpoint sim:/tb_sevseg/*
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "./sevseg.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv(30)
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevseg
+# Error: inputs = xxxx
+#  outputs = 1111111 (xxxxxxx expected)
+#          1 tests completed with          1 errors
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv(56)
+#    Time: 25 ns  Iteration: 1  Instance: /tb_sevseg
+# Break in Module tb_sevseg at C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv line 56
+# Compile of tb_sevseg.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_sevseg(fast)
+# Loading work.sevseg(fast)
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "/sevseg.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv(30)
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevseg
+# Error: inputs = xxxx
+#  outputs = 1111111 (xxxxxxx expected)
+#          1 tests completed with          1 errors
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv(56)
+#    Time: 25 ns  Iteration: 1  Instance: /tb_sevseg
+# Break in Module tb_sevseg at C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv line 56
+# Compile of tb_sevseg.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_sevseg(fast)
+# Loading work.sevseg(fast)
+run -all
+#         16 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv(56)
+#    Time: 175 ns  Iteration: 1  Instance: /tb_sevseg
+# Break in Module tb_sevseg at C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv line 56

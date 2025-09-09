@@ -1,0 +1,1 @@
+C:/lscc/radiant/2024.2/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 393216 work.tb_sevseg(fast) -quiet -auto_acc_if_foreign -work work -L iCE40UP -Lf iCE40UP +acc -allow_unnamed -o _opt2 -id 3-00be43e56ed7-68bfc3ca-3e1-4ebc +__design_bin_path+C:/Users/erinwang/Desktop/E155_lab2/lab2_ew +__betafsm
