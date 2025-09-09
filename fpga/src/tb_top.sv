@@ -1,10 +1,9 @@
 /// Author: Erin Wang
-/// Email: eringwang@g.hmc.edu
-/// Date: 08/31/2025
+/// Email: erinwang@g.hmc.edu
+/// Date: 09/08/2025
 
 // tb_top module tests the top module 
-// It applies inputs to top module and checks if outputs are as expected. 
-// User provides patterns of inputs & desired outputs called testvectors. 
+// It applies inputs to top module and checks if outputs are as expected through assert statements 
 
 // Modelsim-ASE requires a timescale directive
 `timescale 1 ns / 1 ns
@@ -20,7 +19,7 @@ module tb_top();
 	logic sel;
 
 	//// Instantiate device under test (DUT). 
-	// Inputs: s Outputs: led, seg
+	// Inputs: reset, s0, s1 Outputs: led, seg, trans0, trans1
 	top dut(reset, s0, s1, led, seg, trans0, trans1); 
 
 	//// Generate clock at 24 MHz
