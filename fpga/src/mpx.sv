@@ -8,7 +8,9 @@
 
 module mpx( input	clk,
 			input	reset,
-			output	logic select,
+			input	logic [3:0] in0,
+			input	logic [3:0] in1,
+			output	logic [3:0] switch,
 			output	logic trans0,
 			output	logic trans1);
 	logic [23:0] counter;
@@ -27,8 +29,8 @@ module mpx( input	clk,
 		else				counter <= counter + 24'b1;
 	end
 	
-	assign select = counter_output;
-	assign trans0 =  select;
-	assign trans1 = ~select;
+	assign switch = counter_output ? in1:in0;
+	assign trans0 =  counter_output;
+	assign trans1 = ~counter_output;
 	
 endmodule
