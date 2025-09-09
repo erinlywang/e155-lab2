@@ -1,9 +1,11 @@
 /// Author: Erin Wang
-/// Email: eringwang@g.hmc.edu
+/// Email: erinwang@g.hmc.edu
 /// Date: 09/07/2025
 
-// top module takes input from the 4 DIP switches
-// and outputs the 3LEDs and segments of a common-anode 7-segment display
+// top module takes input from two 4 DIP switches
+// and outputs the sum of the inputs onto 5 LEDs,
+// the segments for both digits of a dual common-anode 7-segment display,
+// and the signal for the base of two transistors that turn the digits of the dual display ON/OFF
 
 module top( input	logic reset,
 			input	logic [3:0] s0, 
@@ -26,7 +28,7 @@ module top( input	logic reset,
 	
 	assign s = sel ? s1:s0;
 
-	// logic for what digit to display	
+	// logic for what hexadecimal digit to display	
 	sevseg sevseg(.in(s), .seg(seg));
 	
 	//output logic for displaying the sum of the 2 inputs on the LED
