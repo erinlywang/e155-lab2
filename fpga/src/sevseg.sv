@@ -1,5 +1,5 @@
 /// Author: Erin Wang
-/// Email: eringwang@g.hmc.edu
+/// Email: erinwang@g.hmc.edu
 /// Date: 09/08/2025
 
 // sevseg module takes a 4-bit input
