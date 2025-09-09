@@ -1,3 +1,11 @@
+/// Author: Erin Wang
+/// Email: eringwang@g.hmc.edu
+/// Date: 09/08/2025
+
+// mpx module takes a a clk and reset input
+// and outputs a select logic for the multiplexer logic to choose switch inputs
+// and outputs for turning the transistors (digits on the 7-seg module) ON/OFF
+
 module mpx( input	clk,
 			input	reset,
 			output	logic select,
