@@ -1,10 +1,9 @@
 /// Author: Erin Wang
 /// Email: eringwang@g.hmc.edu
-/// Date: 08/31/2025
+/// Date: 09/08/2025
 
-// tb_top module tests the top module 
-// It applies inputs to top module and checks if outputs are as expected. 
-// User provides patterns of inputs & desired outputs called testvectors. 
+// tb_mpx module tests the top module 
+// It applies inputs to mpx module and checks if outputs are as expected through assert statements 
 
 // Modelsim-ASE requires a timescale directive
 `timescale 1 ns / 1 ns
@@ -16,7 +15,7 @@ module tb_mpx();
     logic   trans0, trans1;  // output
 
 	//// Instantiate device under test (DUT). 
-	// Inputs: s Outputs: sel, trans0, trans1
+	// Inputs: clk, reset Outputs: sel, trans0, trans1
 	mpx dut(.clk(clk), .reset(reset), .select(sel), .trans0(trans0), .trans1(trans1)); 
 
 	//// Generate clock at 24 MHz
