@@ -10,13 +10,15 @@
 
 module tb_mpx(); 
     logic   clk, reset; 
-    
-    logic   select;           // output
+    logic	[3:0] s0, s1;
+    logic   [3:0] s;           // output
     logic   trans0, trans1;  // output
+	
+	logic [7:0] i;
 
 	//// Instantiate device under test (DUT). 
-	// Inputs: clk, reset Outputs: sel, trans0, trans1
-	mpx dut(.clk(clk), .reset(reset), .select(sel), .trans0(trans0), .trans1(trans1)); 
+	// Inputs: s Outputs: sel, trans0, trans1
+	mpx dut(clk, reset, s0, s1, s, trans0, trans1); 
 
 	//// Generate clock at 24 MHz
 	always begin 
@@ -29,18 +31,30 @@ module tb_mpx();
 		//// Pulse reset for 22 time units(2.2 cycles) so the reset signal falls after a clk edge. 
 		reset=0; #22;  
 		reset=1; 
-			
-		//// Check that select flip flops
-		#22
-		assert (sel == 0) else $display(" sel = %b (0 expected)", sel);
-		assert (trans0 == 0) else $display(" trans0 = %b (0 expected)", trans0);	
-		assert (trans1 == 1) else $display(" trans1 = %b (1 expected)", trans1);	
+		
+		//// Check each s output from before counter_output goes high
+		for (i = 8'b00000000; i <= 8'b11111111; i++) begin
+			#1
+			s0 = i[3:0];
+			s1 = i[7:4];
+			#1
+			assert (s == s0) else $display(" s = %b (%b expected)", s, s0);
+			assert (trans0 == 0) else $display(" trans0 = %b (0 expected)", trans0);	
+			assert (trans1 == 1) else $display(" trans1 = %b (1 expected)", trans1);
+		end	
 			
 		/// Wait 2000000 time units (200000 cycles)
-		#2000000
-		assert (sel == 1) else $display(" sel = %b (1 expected)", sel);
-		assert (trans0 == 1) else $display(" trans0 = %b (1 expected)", trans0);	
-		assert (trans1 == 0) else $display(" trans1 = %b (0 expected)", trans1);
+		#20000000
+		for (i = 8'b00000000; i <= 8'b11111111; i++) begin
+			#1
+			s0 = i[3:0];
+			s1 = i[7:4];
+			#1
+			assert (s == s1) else $display(" s = %b (%b expected)", s, s1);
+			assert (trans0 == 1) else $display(" trans0 = %b (1 expected)", trans0);	
+			assert (trans1 == 0) else $display(" trans1 = %b (0 expected)", trans1);
+		end	
+		$finish;
 	end 
 
 endmodule
