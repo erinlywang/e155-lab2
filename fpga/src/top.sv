@@ -1,6 +1,6 @@
 /// Author: Erin Wang
 /// Email: erinwang@g.hmc.edu
-/// Date: 09/07/2025
+/// Date: 09/08/2025
 
 // top module takes input from two 4 DIP switches
 // and outputs the sum of the inputs onto 5 LEDs,
