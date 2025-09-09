@@ -19,7 +19,7 @@ module tb_top();
 	logic sel;
 
 	//// Instantiate device under test (DUT). 
-	// Inputs: reset, s0, s1 Outputs: led, seg, trans0, trans1
+	// Inputs: s Outputs: led, seg
 	top dut(reset, s0, s1, led, seg, trans0, trans1); 
 
 	//// Generate clock at 24 MHz
@@ -33,16 +33,20 @@ module tb_top();
 		//// Pulse reset for 22 time units(2.2 cycles) so the reset signal falls after a clk edge. 
 		reset=0; #22;  
 		reset=1; 
+		
+		#10000 // wait for HSOSC to fire
 			
 		//// Check each LED sum
 		for (i = 8'b00000000; i <= 8'b11111111; i++) begin
-			#11
+			#1
 			s0 = i[3:0];
 			s1 = i[7:4];
 			ledexpected = s0+s1;
-			#11
-			assert (led == ledexpected) else $display(" led = %b (%b expected)", led, ledexpected); 
+			#1
+			assert (led == ledexpected) else $display(" led = %b (%b expected)", led, ledexpected);
 		end
+		
+		$finish;
 	end 
 
 endmodule
