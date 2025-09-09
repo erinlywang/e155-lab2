@@ -1,6 +1,6 @@
 /// Author: Erin Wang
 /// Email: eringwang@g.hmc.edu
-/// Date: 08/31/2025
+/// Date: 09/08/2025
 
 // sevseg module takes a 4-bit input
 // and outputs a 7-bit output for the segments of a common-anode 7-segment display
