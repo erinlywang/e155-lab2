@@ -1,5 +1,5 @@
 /// Author: Erin Wang
-/// Email: eringwang@g.hmc.edu
+/// Email: erinwang@g.hmc.edu
 /// Date: 09/09/2025
 
 // tb_sevseg module tests the sevensegment module 
