@@ -16,19 +16,17 @@ module top( input	logic reset,
 			output	logic  trans1);
 			
 	logic int_osc;
+	logic [3:0] s;
 		
 	// Internal high-speed oscillator
 	HSOSC #(.CLKHF_DIV(2'b01))
 		  hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
 			
 	// logic for selecting input into sevseg and which segment to turn on
-	logic [3:0] s;
-	logic sel;
-	mpx mpx(.clk(int_osc), .reset(reset), .select(sel), .trans0(trans0), .trans1(trans1));
-	
-	assign s = sel ? s1:s0;
 
-	// logic for what hexadecimal digit to display	
+	mpx mpx(.clk(int_osc), .reset(reset), .in0(s0), .in1(s1), .switch(s), .trans0(trans0), .trans1(trans1));
+
+	// logic for what digit to display	
 	sevseg sevseg(.in(s), .seg(seg));
 	
 	//output logic for displaying the sum of the 2 inputs on the LED
