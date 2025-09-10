@@ -1,21 +1,27 @@
 m255
 K4
 z2
-Z0 !s12c _opt2
+Z0 !s12c _opt
 Z1 !s99 nomlopt
 R0
 R1
 R0
 R1
-Z2 !s12c _opt
+R0
 R1
-Z3 !s12c _opt1
+R0
+R1
+Z2 !s12c _opt1
+R1
+R2
+R1
+Z3 !s12c _opt2
 R1
 R3
 R1
 R3
 R1
-R3
+R0
 R1
 R2
 R1
@@ -25,21 +31,29 @@ R2
 R1
 R2
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
 R1
 !s11f vlog 2024.2 2024.05, May 20 2024
 13
@@ -50,34 +64,33 @@ R1
 cModel Technology
 Z4 dC:/Users/erinwang/Desktop/E155_lab2/lab2_ew
 T_opt
-!s110 1757397635
-V_;efD_m><KDk8Gg3Pe4YW2
+!s110 1757457717
+VI8SPc2jL19D<melVTo>:h0
+04 6 4 work tb_mpx fast 0
+=8-00be43e56f6a-68c0ad35-1f1-4128
+R1
+Z5 !s12f OEM25U2 
+Z6 !s12b OEM100
+Z7 !s124 OEM100
+Z8 !s135 nogc
+Z9 o-quiet -auto_acc_if_foreign -work work -L iCE40UP -Lf iCE40UP +acc
+Z10 tCvgOpt 0
+n@_opt
+Z11 OL;O;2024.2;79
+T_opt1
+!s110 1757455764
+VRTbmb8m[H7i3VX;aMPiR:3
 04 6 4 work tb_top fast 0
-=1-00be43e56ed7-68bfc282-322-21ac
+=3-00be43e56f6a-68c0a594-1f-1744
 R1
 !s12f OEM25U4 
-Z5 !s12b OEM100
-Z6 !s124 OEM100
-Z7 !s135 nogc
-Z8 o-quiet -auto_acc_if_foreign -work work -L iCE40UP -Lf iCE40UP +acc
-Z9 tCvgOpt 0
-n@_opt
-Z10 OL;O;2024.2;79
-R4
-T_opt1
-!s110 1757397167
-V2J_O@TMh<2gT@d896^DBi1
-04 6 4 work tb_mpx fast 0
-=7-00be43e56ed7-68bfc0af-3e-323c
-R1
-Z11 !s12f OEM25U2 
-R5
 R6
 R7
 R8
 R9
-n@_opt1
 R10
+n@_opt1
+R11
 R4
 T_opt2
 !s110 1757397963
@@ -85,161 +98,162 @@ V70a^=jzh^4daNI0jDo]:H0
 04 9 4 work tb_sevseg fast 0
 =3-00be43e56ed7-68bfc3ca-3e1-4ebc
 R1
-R11
 R5
 R6
 R7
 R8
 R9
-n@_opt2
 R10
-vmpx
-2C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/mpx.sv
-Z12 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z13 !s110 1757396399
-!i10b 1
-!s100 0M[8S5R>>]<;cYbo<;=4W3
-Ij76na8OCGCh30I6^EcA:@1
-S1
+n@_opt2
+R11
 R4
-w1757395388
-8C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/mpx.sv
-FC:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/mpx.sv
-!i122 47
-L0 1 26
-Z14 VDg1SIo80bB@j0V0VzS_@n1
-Z15 OL;L;2024.2;79
+vmpx
+2C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/mpx.sv
+Z12 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z13 !s110 1757455737
+!i10b 1
+!s100 DFDHJ4M?T:AK^;P5bbQo:2
+Ig`3EW3G>iWn=f2Z8Q>AkG3
+S1
+Z14 dC:/Users/erinwang/Desktop/lab2_ew
+w1757455375
+8C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/mpx.sv
+FC:/Users/erinwang/Desktop/lab2_ew/source/impl_1/mpx.sv
+!i122 88
+L0 1 28
+Z15 VDg1SIo80bB@j0V0VzS_@n1
+Z16 OL;L;2024.2;79
 r1
 !s85 0
 31
-Z16 !s108 1757396399.000000
-!s107 C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/mpx.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/mpx.sv|
+Z17 !s108 1757455737.000000
+!s107 C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/mpx.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/mpx.sv|
 !i113 0
-Z17 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R9
+Z18 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R10
 vsevseg
-2C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/sevseg.sv
+2C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/sevseg.sv
 R12
 R13
 !i10b 1
 !s100 Yj<DcYn^DQU3mF<^e6dfj2
-I1]j3Wf3SeAfV^iSOJF5d63
+In9lHXnFoG]MlJHG1@?Dm?2
 S1
-R4
-w1757356521
-8C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/sevseg.sv
-FC:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/sevseg.sv
-!i122 48
+R14
+Z19 w1757454197
+8C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/sevseg.sv
+FC:/Users/erinwang/Desktop/lab2_ew/source/impl_1/sevseg.sv
+!i122 89
 L0 8 24
-R14
 R15
-r1
-!s85 0
-31
 R16
-!s107 C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/sevseg.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/sevseg.sv|
-!i113 0
-R17
-R9
-vtb_mpx
-2C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv
-R12
-!s110 1757397160
-!i10b 1
-!s100 ORiOAF1a:?lYQghT^dOi70
-I@7SRP?O[edcciJ15dOh9`2
-S1
-R4
-w1757397156
-8C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv
-FC:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv
-!i122 55
-L0 12 36
-R14
-R15
 r1
 !s85 0
 31
-!s108 1757397160.000000
-!s107 C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv|
-!i113 0
 R17
-R9
-vtb_sevseg
-2C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv
+!s107 C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/sevseg.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/sevseg.sv|
+!i113 0
+R18
+R10
+vtb_mpx
+2C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_mpx.sv
 R12
-!s110 1757397947
+!s110 1757457676
+!i10b 1
+!s100 _>J;P_UQZAAe`dP5Hj5UI3
+I@0Z?ZoOT94az@51i5T?QX0
+S1
+R14
+w1757457666
+8C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_mpx.sv
+FC:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_mpx.sv
+!i122 100
+L0 12 50
+R15
+R16
+r1
+!s85 0
+31
+!s108 1757457676.000000
+!s107 C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_mpx.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_mpx.sv|
+!i113 0
+R18
+R10
+vtb_sevseg
+2C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_sevseg.sv
+R12
+Z20 !s110 1757455738
 !i10b 1
 !s100 ZH]5VJ7UPL`IePIS2=QdC0
-IZWTMhGVLMXd9ZhSF;6_RM0
+IKnf1MN^DfVTNQ1L]8E;f82
 S1
-R4
-w1757397930
-8C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv
-FC:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv
-!i122 59
+R14
+R19
+8C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_sevseg.sv
+FC:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_sevseg.sv
+!i122 90
 L0 9 51
-R14
 R15
+R16
 r1
 !s85 0
 31
-!s108 1757397947.000000
-!s107 C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_sevseg.sv|
+Z21 !s108 1757455738.000000
+!s107 C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_sevseg.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_sevseg.sv|
 !i113 0
-R17
-R9
+R18
+R10
 vtb_top
-2C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv
+2C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_top.sv
 R12
-!s110 1757397607
+!s110 1757456724
 !i10b 1
-!s100 CU_7EhVfal9AWN^IXmmUh1
-Iz`O>C]WGh7m30mMNcF^;Q2
+!s100 5ZFOGYXO^BDXHVo7g69R>0
+IM8_9g7jZBXPZ5]c5IbzP11
 S1
-R4
-w1757397600
-8C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv
-FC:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv
-!i122 56
-L0 12 38
 R14
+w1757456439
+8C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_top.sv
+FC:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_top.sv
+!i122 96
+L0 12 42
 R15
+R16
 r1
 !s85 0
 31
-!s108 1757397607.000000
-!s107 C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv|
+!s108 1757456724.000000
+!s107 C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_top.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_top.sv|
 !i113 0
-R17
-R9
+R18
+R10
 vtop
-2C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv
+2C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/top.sv
 R12
-!s110 1757396400
+R20
 !i10b 1
-!s100 b2ZgcN;O1]K;boo`T[;6C3
-ImRPlm23Hm^h_[U][=0ASJ1
+!s100 XN28W=9U46gzYe83;>>PC2
+I`MDCP9ZN8d37B]zoldG643
 S1
-R4
-w1757395422
-8C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv
-FC:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv
-!i122 52
-L0 8 27
 R14
+w1757455010
+8C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/top.sv
+FC:/Users/erinwang/Desktop/lab2_ew/source/impl_1/top.sv
+!i122 92
+L0 8 25
 R15
+R16
 r1
 !s85 0
 31
-!s108 1757396400.000000
-!s107 C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv|
+R21
+!s107 C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/top.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/top.sv|
 !i113 0
-R17
-R9
+R18
+R10

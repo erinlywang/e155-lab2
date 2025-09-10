@@ -18,7 +18,7 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>../../impl_1/lab2_ew_impl_1.bin</File>
-			<FileTime>09/08/25 14:01:42</FileTime>
+			<FileTime>09/09/25 15:03:29</FileTime>
 			<JedecChecksum>0x623E</JedecChecksum>
 			<MemoryType>External SPI Flash Memory (SPI FLASH)</MemoryType>
 			<Operation>Erase,Program,Verify</Operation>

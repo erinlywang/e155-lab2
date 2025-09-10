@@ -1,0 +1,78 @@
+C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/mpx.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/mpx.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module mpx
+
+Top level modules:
+	mpx
+
+} {} {}} C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/sevseg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/sevseg.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module sevseg
+
+Top level modules:
+	sevseg
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_mpx.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_mpx
+
+Top level modules:
+	tb_mpx
+
+} {} {}} C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_mpx.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_mpx.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_mpx
+
+Top level modules:
+	tb_mpx
+
+} {} {}} C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_sevseg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_sevseg.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_sevseg
+
+Top level modules:
+	tb_sevseg
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/top.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/top.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/tb_top.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_top
+
+Top level modules:
+	tb_top
+
+} {} {}} C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/lab2_ew/source/impl_1/tb_top.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_top
+
+Top level modules:
+	tb_top
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/sevseg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/sevseg.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module sevseg
+
+Top level modules:
+	sevseg
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/mpx.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab2/lab2_ew/source/impl_1/mpx.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module mpx
+
+Top level modules:
+	mpx
+
+} {} {}}
